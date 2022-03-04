@@ -4,6 +4,8 @@ import { StyleSheet, View } from "react-native";
 
 import Tabs from "./src/navigation/tabs";
 
+import colors from "./src/themes/colors";
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -19,7 +21,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    backgroundColor: "red",
   },
 });

@@ -22,25 +22,25 @@ const TabOptions = ({ route }) => ({
     let iconName;
 
     if (route.name === "Home") {
-      //   iconName = focused ? "home-sharp" : "home-outline";
       return <TabBarHome size={size} color={color} />;
     } else if (route.name === "Categories") {
-      //   iconName = focused ? "albums-sharp" : "albums-outline";
       return <TabBarCategories size={size} color={color} />;
     } else if (route.name === "Favorites") {
-      //   iconName = focused ? "heart-sharp" : "heart-outline";
       return <TabBarFavorites size={size} color={color} />;
     } else if (route.name === "Profile") {
-      //   iconName = focused ? "person-sharp" : "person-outline";
       return <TabBarProfile size={size} color={color} />;
     }
-
-    // You can return any component that you like here!
-    // return <TabBarHome size={size} color={color} />;
   },
   tabBarActiveTintColor: `${colors.secundary}`,
   tabBarInactiveTintColor: `${colors.textColor}`,
-  tabBarStyle: { backgroundColor: `${colors.inputBackground}` },
+  tabBarStyle: {
+    backgroundColor: `${colors.inputBackground}`,
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
+    height: 92,
+    paddingBottom: 20,
+    position: "absolute",
+  },
   headerShown: false,
 });
 
