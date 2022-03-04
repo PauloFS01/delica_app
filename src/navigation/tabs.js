@@ -41,6 +41,7 @@ const TabOptions = ({ route }) => ({
   tabBarActiveTintColor: `${colors.secundary}`,
   tabBarInactiveTintColor: `${colors.textColor}`,
   tabBarStyle: { backgroundColor: `${colors.inputBackground}` },
+  headerShown: false,
 });
 
 export default function Tabs() {
